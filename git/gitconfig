@@ -1,0 +1,31 @@
+[user]
+        name = Megan Boggess
+        email = meganboggess@gmail.com
+[credential]
+        helper = osxkeychain
+[core]
+	autocrlf = false
+	trustctime = false
+	editor = vim
+[alias]
+	unstage = reset HEAD --
+	uncommit = reset --soft HEAD^
+	find = "!git log --color -p -S "
+	stat = "!git status -s"
+	gr = "log --full-history --decorate=short --all --color --graph"
+	gru = "log --full-history --decorate=short --all --color --graph @{upstream}^.."
+	lg = "log --oneline --decorate=short --abbrev-commit --all --color --graph"
+	lgu = "log --oneline --decorate=short --abbrev-commit --all --color --graph @{upstream}^.."
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = auto
+[push]
+	default = tracking
+[branch]
+	autosetuprebase = always
+[include]
+	# requires git v1.7.10+
+
