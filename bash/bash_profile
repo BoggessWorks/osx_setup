@@ -1,0 +1,4 @@
+# Export global variables here
+
+# Source bashrc files here
+source ~/.bashrc
