@@ -133,7 +133,7 @@ function set_bash_prompt () {
     BRANCH=''
   fi
   # Set the bash prompt variable.
-  PS1="\u@\h:${TRIMMED_PWD}${COLOR_NONE} (${BRANCH}) ${PROMPT_SYMBOL} "
+  PS1="${YELLOW}\u@\h:${TRIMMED_PWD}${COLOR_NONE} (${BRANCH}) ${PROMPT_SYMBOL} "
 }
 
 if [ -n "$PS1" ]; then
