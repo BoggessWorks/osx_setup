@@ -26,6 +26,9 @@
 # OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+# This file belongs in the home directory as a hidden file,
+# named "bashrc.$project_name".
+
 # EDIT PER PROJECT #
 # Does the user have a Git subdirectory?
 if [[ -d $HOME/elsevier/git ]]; then
