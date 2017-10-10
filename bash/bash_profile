@@ -1,5 +1,22 @@
 # Export global variables here
+
+# For brew version of python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+
+# For node.js (I think...?)
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+
+# Per project
+# Project folder shortcut
+export ELS=""
+
+# Secrets
+export GIT_USER_API="-u $username:$apitoken"
+export SLACK_CLIENT_ID=""
+export SLACK_CLIENT_SECRET=""
 
 # Source bashrc files here
 source ~/.bashrc
+# Rename this to the project bashrc file
+source ~/.bashrc.proj
