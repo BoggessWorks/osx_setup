@@ -1,0 +1,2 @@
+# Keep it secret, keep it safe
+export GIT_USER_API="-u $username:$gitapitoken"
