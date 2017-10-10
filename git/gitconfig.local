@@ -1,0 +1,18 @@
+# This is a host specific config file!
+# Note that git 1.7.10+ is needed
+
+[core]
+        excludesfile = /home/mboggess/.gitignore_global
+        editor = vim
+[merge]
+        tool = meld3
+        conflictstyle = diff3
+[mergetool "meld3"]
+        cmd = meld --auto-merge "$LOCAL" "$BASE" "$REMOTE" -o "$MERGED" --diff "$BASE" "$LOCAL" --diff "$BASE" "$REMOTE"
+        trustExitCode = false
+[mergetool "meld3a"]
+        cmd = meld --auto-merge "$BASE" "$LOCAL" "$REMOTE"
+        trustExitCode = false
+[mergetool "meld3b"]
+        cmd = meld --auto-merge --diff "$BASE" "$LOCAL" --diff "$BASE" "$REMOTE" --diff "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+        trustExitCode = false
