@@ -16,6 +16,7 @@
 	gru = "log --full-history --decorate=short --all --color --graph @{upstream}^.."
 	lg = "log --oneline --decorate=short --abbrev-commit --all --color --graph"
 	lgu = "log --oneline --decorate=short --abbrev-commit --all --color --graph @{upstream}^.."
+	log1 = log --oneline --decorate=short
 [color]
 	diff = auto
 	status = auto
@@ -28,4 +29,3 @@
 	autosetuprebase = always
 [include]
 	# requires git v1.7.10+
-
