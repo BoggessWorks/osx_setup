@@ -1,8 +1,8 @@
 [user]
-        name = Megan Boggess
-        email = meganboggess@gmail.com
+    name = Megan Boggess
+    email = <email>
 [credential]
-        helper = osxkeychain
+    helper = osxkeychain
 [core]
 	autocrlf = false
 	trustctime = false
@@ -10,9 +10,9 @@
 [alias]
 	unstage = reset HEAD --
 	uncommit = reset --soft HEAD^
-	find = "!git log --color -p -S "
-	stat = "!git status -s"
-	gr = "log --full-history --decorate=short --all --color --graph"
+	find = "log --color -p -S"
+	stat = "status -s"
+    gr = "log --full-history --decorate=short --all --color --graph"
 	gru = "log --full-history --decorate=short --all --color --graph @{upstream}^.."
 	lg = "log --oneline --decorate=short --abbrev-commit --all --color --graph"
 	lgu = "log --oneline --decorate=short --abbrev-commit --all --color --graph @{upstream}^.."
