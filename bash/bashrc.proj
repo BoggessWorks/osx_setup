@@ -35,6 +35,10 @@ if [[ -d $HOME/elsevier/git ]]; then
   export GIT="$HOME/elsevier/git"
 fi
 
+if [[ -d $HOME/elsevier/gitlab ]]; then
+  export GITLAB="$HOME/elsevier/gitlab"
+fi
+
 # This section is for things that MUST be done for every
 # shell (regardless of whether it is an interactive shell
 # or not (as determined by PS1 being set or not).

@@ -1,22 +1,55 @@
 # Export global variables here
 
+#Go
+export GOPATH="/Users/boggessm/go"
+export GOROOT="/Users/boggessm/go"
+export PATH="$GOROOT/bin:$GOPATH/bin:$PATH"
+
+# Colors
+export CLICOLOR=1
+export TERM=xterm-256color
+
+# For gradle
+export GRADLE_HOME="/Users/boggessm/.gradle"
+
+# For pipenv
+export PATH="/Users/boggessm/Library/Python/2.7/bin:$PATH"
+
+# For sonarqube
+export SONAR_HOME=""
+export PATH="$SONAR_HOME:$PATH"
+
 # For brew version of python
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # For node.js (I think...?)
+export NODE_INSTALL="/usr/local/bin/node"
+export NODE_PATH="/usr/local/bin"
+export NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+export PATH="$NPM_PACKAGES/bin:$PATH"
 
 # Per project
 # Project folder shortcut
 export ELS=""
 
 # Secrets
-export GIT_USER_API="-u $username:$apitoken"
+export GIT_USER_API="-u $username:$githubapitoken"
+export GITLAB_USER_API='--header PRIVATE-TOKEN:$gitlabapitoken'
 export SLACK_CLIENT_ID=""
 export SLACK_CLIENT_SECRET=""
+export SQ_USER_API="-u $username:$password"
+export SQ_TOKEN="$sq_token"
 
-# Source bashrc files here
+# Source bashrc files
 source ~/.bashrc
 # Rename this to the project bashrc file
 source ~/.bashrc.proj
+
+if [ -f ~/git-completion.bash ]; then
+    source ~/git-completion.bash
+fi
+
+# Source other completion or bash function files here
+# Ex: hub.bash_completion or oc-functions.sh

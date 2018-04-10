@@ -1,2 +1,3 @@
-# Keep it secret, keep it safe
-export GIT_USER_API="-u $username:$gitapitoken"
+alias weather='weather -l 19122'
+alias tac='/usr/local/bin/gtac'
+alias crontabe='env EDITOR=vim crontab -e'
